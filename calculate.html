@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function add(){
+                var num1=document.getElementById('number1').value;
+                var num2=document.getElementById('number2').value;
+                var result=parseInt(num1)+parseInt(num2);
+                document.getElementById('lblResult').innerHTML=result;
+                alert('Your result is'+result);
+            }
+            function substract(){
+                var num1=document.getElementById('number1').value;
+                var num2=document.getElementById('number2').value;
+                var result=parseInt(num1)-parseInt(num2);
+                document.getElementById('lblResult').innerHTML=result;
+                alert('Your result is'+result);
+            }
+            function multi(){
+                var num1=document.getElementById('number1').value;
+                var num2=document.getElementById('number2').value;
+                var result=parseInt(num1)*parseInt(num2);
+                document.getElementById('lblResult').innerHTML=result;
+                alert('Your result is'+result);
+            }
+            function div(){
+                var num1=document.getElementById('number1').value;
+                var num2=document.getElementById('number2').value;
+                var result=parseInt(num1)/parseInt(num2);
+                document.getElementById('lblResult').innerHTML=result;
+                alert('Your result is'+result);
+            }
+            function addNumber(num1,num2)
+            {
+                return num1+num2;
+            }
+            function substractNumber(num1,num2)
+            {
+                return num1-num2;
+            }
+            function multiNumber(num1,num2)
+            {
+                return num1*num2;
+            }
+            function divNumber(num1,num2)
+            {
+                return num1/num2;
+            }
+        </script>
+    </head>
+    <body>
+        <label>Number 1:</label><br>
+        <input type="number" id="number1"/><br>
+        <label>Number 2:</label><br>
+        <input type="number" id="number2"/><br>
+        <h3 id='lblResult'></h3>
+        <button onclick="add()">+</button>
+        <button onclick="substract()">-</button>
+        <button onclick="multi()">*</button>
+        <button onclick="div()">/</button>
+    </body>
+</html>
